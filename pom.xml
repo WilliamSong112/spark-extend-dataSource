@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>spark</groupId>
+    <artifactId>spark-extend-dataSource</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>customListener</module>
+        <module>customSource-sql</module>
+        <module>customRDD</module>
+        <module>customMMetric</module>
+        <module>custom-direct-streaming</module>
+        <module>sparkStreaming-direct</module>
+        <module>customSource-sql-v2</module>
+        <module>custom-java-demo</module>
+        <module>custom-SparkStructstream-source</module>
+    </modules>
+
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <scala.version>2.11.8</scala.version>
+        <spark.version>2.2.0</spark.version>
+        <!--<hadoop.version>2.6.0-cdh5.7.0</hadoop.version>-->
+        <!--<hbase.version>1.2.0-cdh5.7.0</hbase.version>-->
+        <encoding>UTF-8</encoding>
+    </properties>
+
+
+    <dependencies>
+
+
+        <!-- 导入spark的依赖 -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.11</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+        <!-- 导入spark的依赖 -->
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-sql -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_2.11</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+
+
+    </dependencies>
+
+</project>
